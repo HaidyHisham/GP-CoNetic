@@ -1,17 +1,24 @@
-import { useState } from 'react'
+
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import SignUp from './Pages/SignUp'
-import './index.css'; 
+import React from "react";
+import { createBrowserRouter,RouterProvider } from 'react-router-dom';
+import { Button } from "flowbite-react";
+import SignUp from './Pages/SignUp';
+
+
 
 
 function App() {
+  const router = createBrowserRouter([
+    {path:"/",element:<SignUp/>},
+    ])
   
   return (
     <>
-    <SignUp/>
-      
+    <RouterProvider router={router}> </RouterProvider>
+
     </>
   )
 }
