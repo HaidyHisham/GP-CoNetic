@@ -1,13 +1,14 @@
+import '../CSS/Authentication/SignPages.scss';
 import React from "react";
 import { FaGoogle } from "react-icons/fa"; // Import Google icon
 import { Link} from "react-router-dom";
 
 export default function SignUp() {
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-100">
+    <div className="flex justify-center items-center min-h-screen bg-gray-100 ">
       <div className="bg-white p-8 rounded-xl shadow-lg max-w-lg">
         <h2 className="text-2xl font-semibold text-gray-900 text-center">Become a member!</h2>
-        <p className="text-gray-500 text-center mt-1">Enter your details below to create your account</p>
+        <p className="text-gray-500 text-center mt-1 ">Enter your details below to create your account</p>
 
         {/* Google Login Button */}
         <div className="mt-6">
@@ -70,7 +71,7 @@ export default function SignUp() {
           </div>
 
           {/* Submit Button */}
-          <button className="w-full bg-black text-white py-2 rounded-lg text-sm font-semibold hover:bg-gray-900 transition">
+          <button className="sign_btn">
             Create account
           </button>
           <p className="text-gray-600 text-sm text-center mt-4">

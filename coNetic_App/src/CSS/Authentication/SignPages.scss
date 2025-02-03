@@ -9,3 +9,91 @@ $header6: 1.125rem;     //18px
 $paragraph: 1rem;       //16px
 $helperText: 0.8125rem;  //12px
 $copyRightText: 0.6875rem;//11px
+
+//colors
+//purple pallette
+$green500: #79b16a; //darker
+$green400:  #92cb83;
+$green300:#9FD88F ;
+$green200: #b9f3a8;
+$green100: #c6ffb5; //lighter
+
+//black and white pallette
+$black: #000000;
+$grey500: #3F3F3F;
+$grey400: #848484;
+$grey300: #959595;
+$grey200: #b3b3b3;
+$grey100: #F8F8F8;
+$white:#FFFFFF;
+
+//other colors
+$green : #2BB673;
+$blue : #5DCCDB;
+$yellow : #F2CF60;
+$pink : #F2607A;
+
+$Lgreen : #EAF8F1;
+$Lblue : #EFFAFB;
+$Lyellow : #FEFAEF;
+$Lpink : #FEEFF2;
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: $primary_font;
+    font-size: $header6;
+
+}
+//Buttons
+@mixin btn($width, $height, $color, $bg, $font, $border, $bgHover){
+  font-family: $primary_font;
+  border-radius: 10px;
+  width: $width;
+  height:$height;
+  color: $color;
+  background-color: $bg;
+  font-size: $font;
+  font-weight: 700;
+  border: 2px solid $border;
+  cursor: pointer;
+
+  &:hover{
+    transition: 0.04s ease-out;
+    transition-delay: 0.04s;
+    background-color: $bgHover;
+    box-shadow: rgba(0, 0, 0, 0.22) 0px 2px 7px;
+  }
+}
+.btnc{
+  background-color: $green300;
+}
+.primary_btn {
+  @include btn(219px, 62px, $white, $black, $header4, transparent, $green400);
+}
+
+.nav_btn {
+  @include btn(167px, 50px, $white, $black, $header4, transparent, $green400);
+}
+
+.outline_btn{
+  @include btn(219px, 62px, $black,$white , $header4, $grey200 , $grey100)
+  
+}
+
+.sign_btn{
+  @include btn(395px, 45px, $white,$black , $paragraph, transparent , $green400)
+}
+
+.signGoogle_btn{
+  @include btn(395px, 45px, $black,$white , $paragraph, $grey200 , $grey100)
+}
+
+.continue_btn{
+  @include btn(400px, 45px, $white,$green400 , $header4, transparent , $green300)
+}
+
+.other_btn{
+  @include btn(167px, 50px, $white, $green400, $header4, transparent, $green300);
+}
+ 
