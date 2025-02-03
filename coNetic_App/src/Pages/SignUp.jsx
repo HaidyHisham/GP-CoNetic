@@ -2,7 +2,7 @@ import '../CSS/Authentication/SignPages.scss';
 import React, { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa"; // Import eye icons
 import { Link} from "react-router-dom";
-import * as Yup from 'yup';
+
 
 export default function SignUp() {
     // State to toggle password visibility
