@@ -65,9 +65,9 @@ body{
     box-shadow: rgba(0, 0, 0, 0.22) 0px 2px 7px;
   }
 }
-.btnc{
-  background-color: $green300;
-}
+// .btnc{
+//   background-color: $green300;
+// }
 .primary_btn {
   @include btn(219px, 62px, $white, $black, $header4, transparent, $green400);
 }
