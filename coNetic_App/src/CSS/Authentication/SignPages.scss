@@ -48,7 +48,7 @@ body{
     font-size: $header6;
     
 }
-.sign-up-container {
+.sign-up-container,.sign_in_container {
   // background-image: url(https://images.unsplash.com/photo-1502945015378-0e284ca1a5be?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   background: linear-gradient(90deg, #87C2D4, white);
   min-height: 100vh;

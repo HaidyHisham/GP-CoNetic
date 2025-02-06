@@ -6,13 +6,16 @@ import React from "react";
 import { createBrowserRouter,RouterProvider } from 'react-router-dom';
 import { Button } from "flowbite-react";
 import SignUp from './Pages/SignUp';
+import SignIn from './Pages/SignIn';
 
 
 
 
 function App() {
   const router = createBrowserRouter([
-    {path:"/",element:<SignUp/>},
+    {path:"/",element:<SignUp/>},{
+      path:"/signin",element:<SignIn/>
+    }
     ])
   
   return (
