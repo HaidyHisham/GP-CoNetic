@@ -11,12 +11,15 @@ $helperText: 0.8125rem;  //12px
 $copyRightText: 0.6875rem;//11px
 
 //colors
-//green pallette
-$green500: #79b16a; //darker
-$green400:  #92cb83;
-$green300:#9FD88F ;
-$green200: #b9f3a8;
-$green100: #c6ffb5; //lighter
+/*blue pallette*/
+$blue500: #639eb0; //darker
+$blue400:  #87C2D4;
+$blue300:#93cee0 ;
+$blue200: #9fdaed;
+$blue100: #abe7f9; //lighter
+
+/*blue pallette*/
+/* 639eb0 6faabc 7bb6c8 87c2d4 93cee0 9fdaed abe7f9 */
 
 //black and white pallette
 $black: #000000;
@@ -47,7 +50,7 @@ body{
 }
 .sign-up-container {
   // background-image: url(https://images.unsplash.com/photo-1502945015378-0e284ca1a5be?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-  background: linear-gradient(135deg, #9FD88F, white);
+  background: linear-gradient(90deg, #87C2D4, white);
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -81,11 +84,11 @@ body{
 //   background-color: $green300;
 // }
 .primary_btn {
-  @include btn(219px, 62px, $white, $black, $header4, transparent, $green400);
+  @include btn(219px, 62px, $white, $black, $header4, transparent, $blue400);
 }
 
 .nav_btn {
-  @include btn(167px, 50px, $white, $black, $header4, transparent, $green400);
+  @include btn(167px, 50px, $white, $black, $header4, transparent, $blue400);
 }
 
 .outline_btn{
@@ -94,7 +97,7 @@ body{
 }
 
 .sign_btn{
-  @include btn(395px, 45px, $white,$green400, $paragraph, transparent , $green500)
+  @include btn(395px, 45px, $white,$blue400, $paragraph, transparent , $blue500)
 }
 
 .signGoogle_btn{
@@ -102,11 +105,11 @@ body{
 }
 
 .continue_btn{
-  @include btn(400px, 45px, $white,$green400 , $header4, transparent , $green300)
+  @include btn(400px, 45px, $white,$blue400 , $header4, transparent , $blue300)
 }
 
 .other_btn{
-  @include btn(167px, 50px, $white, $green400, $header4, transparent, $green300);
+  @include btn(167px, 50px, $white, $blue400, $header4, transparent, $blue300);
 }
 
 
@@ -181,22 +184,22 @@ body{
     background-color: $bgActive;
     border: 1px solid $borderActive; 
     // outline: 2px solid $green300; 
-    box-shadow: 0 0 5px rgba($green300, 0.5); // Optional glow effect
+    box-shadow: 0 0 5px rgba($blue300, 0.5); // Optional glow effect
   }
 }
 
 // Applying the mixin to the Full Name input
 .inputField_pass {
-  @include inputField(394px, 38px, $black, $white, $grey200, $grey100, $white, $green300);
+  @include inputField(394px, 38px, $black, $white, $grey200, $grey100, $white, $blue300);
 }
 
 .inputField_sign{
-  @include inputField(394px, 38px, $black,$white , $grey200 , $grey100, $green100, $green100);
+  @include inputField(394px, 38px, $black,$white , $grey200 , $grey100, $blue100, $blue100);
 
 }
 
 .selectField_sign1{
-  @include inputField(394px, 38px, $black,$white , $grey200 , $grey100, $green100, $green100);
+  @include inputField(394px, 38px, $black,$white , $grey200 , $grey100, $blue100, $blue100);
   font-size: 15px;
 	appearance:none;
 	-webkit-appearance:none;
@@ -215,7 +218,7 @@ body{
 
 .selectField_sign{
  
-  @include inputField(395px, 40px, $black,$white , $grey200 , $grey100, $green100, $black);
+  @include inputField(395px, 40px, $black,$white , $grey200 , $grey100, $blue100, $black);
   font-size: $helperText;
   color:$grey200;
   margin-right: 20px;
